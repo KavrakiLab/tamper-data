@@ -1,0 +1,41 @@
+joints:
+  arm_with_torso:
+  - 0.2819003760814667
+  - 0.010042109558105469
+  - -0.8080684352496338
+  - 0.4457302635974884
+  - 0.4796955567260742
+  - -0.3239803319315338
+  - 1.9325245412438965
+  - -2.918508785797119
+  head_pan_joint: -0.3901402950286865
+  head_tilt_joint: 0.709937909967041
+kl_drawer:
+  pose:
+    orientation:
+      w: 0.9996456822831782
+      x: -0.00683186291483852
+      y: 0.007738302148648155
+      z: 0.024534755380238367
+    position:
+      x: 0.9435961618833985
+      y: 0.5111303203809053
+      z: 0.2817292283067627
+  vicon_model_path: package://onto/resources/simulation/vicon_object_server/objects/kl_drawer_closed.yaml
+# macaroni:
+#   vicon_model_path: package://onto/resources/simulation/vicon_object_server/objects/MacaroniAndCheese.yaml
+# popcorn:
+#   vicon_model_path: package://onto/resources/simulation/vicon_object_server/objects/Popcorn.yaml
+problem_file: package://onto/resources/real_robot/sense_tamp/benchmarks/drawer_shelf/1_spec.yaml
+table1:
+  pose:
+    orientation:
+      w: -0.029700367887739346
+      x: 0.005512584516197051
+      y: -0.0009206693887081021
+      z: 0.9995432216403458
+    position:
+      x: 0.8444165971924996
+      y: -0.4046757588738097
+      z: 0.6340665075488426
+  vicon_model_path: package://kl_robot_hardware_fetch/parameters/vicon_object_server/objects/table_shelf_kavrakilab.yaml

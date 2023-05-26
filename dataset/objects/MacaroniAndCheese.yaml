@@ -1,0 +1,10 @@
+name            : "MacaroniAndCheese"
+frame           : "vicon/MacaroniAndCheese/MacaroniAndCheese"
+geometry        :
+  type          : "box"
+  dimensions    : [0.16625600814819336, 0.040180997848510742, 0.12350899696350098]
+  offset        :
+    position    : [0, 0, 0]
+    orientation : [0, 0, 0, 1]
+grasp_force     : 35
+grasp_offset    : -0.01

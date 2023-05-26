@@ -1,0 +1,97 @@
+### Description
+# gelatin and Macaroni are stacked. We expect to see the robot move cracker to the goal
+# location, and unstacks gelatin and stacks it over the cracker. If motion constraints
+# suggest that cracker cannot be reached due to gelatin, more steps required
+
+### TAMP Options
+abstraction: "pddl" # pddl, mdp
+model_spec: "file" # server, file, rgbd
+perception: "rgbd" # server, file, real
+perception_module: ["vicon", "dope"] # Specify all you want to use from <vicon, dope,>
+occlusion_ratio: 0.6
+
+# idtmp encoding means we apply a discretization to locations
+# sampling encoding is for single-robot with regions and locations
+# mrtamp encoding is for multi-robot with regions and locations
+# duster encoding is for multi-robot with cleaning task
+encoding: "sampling" # idtmp, sampling, mrtamp, duster, drawer
+
+### Obstacles
+
+### Support surface obstacles (table, shelf, drawer,etc.)
+tables:
+  - name: "table1"
+    vicon_model_path: "package://kl_robot_hardware_fetch/parameters/vicon_object_server/objects/table_kavrakilab.yaml"
+
+### Locations
+# For idtmp, all tables will be discretized into grid locations
+# grid_size: 0.1
+
+region:
+  - name: "tabletop"
+    parent_object: "table1"
+    width: 0.31 # side length in x
+    length: 1.0 # side length in y
+    # length: 0.8 # side length in y
+    pose: # Relative to the parent pose
+      position: [0.16, 0.0, 0.065]
+      orientation: [0.0, 0.0, 0.0, 1.0]
+
+location:
+  - name: "goalfront"
+    parent_object: "table1"
+    width: 0.03 # side length in x
+    length: 0.03 # side length in y
+    pose: # Relative to the parent pose
+      position: [0.22, 0.2, 0.065]
+      orientation: [0.0, 0.0, 0.0, 1.0]
+  - name: "goalmiddle"
+    parent_object: "table1"
+    width: 0.03 # side length in x
+    length: 0.03 # side length in y
+    pose: # Relative to the parent pose
+      position: [0.14, 0.2, 0.065]
+      orientation: [0.0, 0.0, 0.0, 1.0]
+  - name: "goalback"
+    parent_object: "table1"
+    width: 0.03 # side length in x
+    length: 0.03 # side length in y
+    pose: # Relative to the parent pose
+      position: [0.07, 0.2, 0.065]
+      orientation: [0.0, 0.0, 0.0, 1.0]
+
+### Objects
+objects:
+  - name: "cracker"
+    vicon_model_path: "package://onto/resources/simulation/vicon_object_server/objects/cracker.yaml"
+  - name: "gelatin"
+    vicon_model_path: "package://onto/resources/simulation/vicon_object_server/objects/gelatin.yaml"
+  - name: "macaroni"
+    vicon_model_path: "package://onto/resources/simulation/vicon_object_server/objects/MacaroniAndCheese.yaml"
+
+### Task Planning
+goal: "(and (at cracker goalfront) (at macaroni goalmiddle) (at gelatin goalback))"
+domain_pddl: "tamp_exec/pick_place_region_domain.pddl"
+
+# If this object is occluded, force the goal orientation in world frame to be this
+# Unoccluded objects' goals' orientation are determined by its start pose for now
+goal_pose:
+  - name: "cracker"
+    location: "goalfront"
+    orientation: [0.0, 0.707, 0.0, 0.707]
+  - name: "macaroni"
+    location: "goalmiddle"
+    orientation: [0, 0, 0.707, 0.707]
+  - name: "gelatin"
+    location: "goalback"
+    orientation: [-0.5, 0.5, -0.5, 0.5]
+
+### Partial TAMP options
+
+obj_symbolic_locs:
+  - name: "cracker"
+    location: "crackerinit"
+  - name: "macaroni"
+    location: "macaroniinit"
+  - name: "gelatin"
+    location: "gelatininit"

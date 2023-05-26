@@ -1,0 +1,20 @@
+name            : "cracker"
+frame           : "vicon/cracker/cracker"
+geometry        :
+  type          : "box"
+  dimensions    : [0.16403600692749023,0.21343700408935547,0.07179999828338623]
+  offset        :
+    position    : [0, 0, 0]
+    orientation : [0, 0, 0, 1]
+grasp_force     : 35
+grasp_offset    : -0.007
+# grasp_offset    : -0.012
+# geometry        :
+#   type          : "mesh"
+#   mesh_name     : "cracker"
+#   resource      : "package://onto/resources/simulation/gazebo/models/003_cracker_box/google_16k/textured.dae"
+#   dimensions    : [1, 1, 1] # Scale
+#   optional_dim  : [0.06, 0.06, 0.05] # WIDTH of the triangle, HEIGHT, thickness
+#   offset        :
+#     position    : [0, 0, 0]
+#     orientation : [0.0, 0.0, 0.0, 1.0]

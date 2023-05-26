@@ -1,0 +1,60 @@
+cracker:
+  pose:
+    orientation:
+      w: 0.698677756618321
+      x: 0.0028378165628027354
+      y: -0.7153638397736659
+      z: 0.009793668782595947
+    position:
+      x: 0.45633158246802663
+      y: 0.13140244175753812
+      z: 0.7847356882902481
+  vicon_model_path: /home/robot/catkin_ws/src/dataset/objects/cracker.yaml
+gelatin:
+  pose:
+    orientation:
+      w: 0.531290315703609
+      x: 0.4583824241135252
+      y: -0.47933153964594577
+      z: -0.5271218348769241
+    position:
+      x: 0.565776282399664
+      y: 0.14786419628177838
+      z: 0.7435564848544813
+  vicon_model_path: /home/robot/catkin_ws/src/dataset/objects/gelatin.yaml
+joints:
+  arm_with_torso:
+  - 0.11090924590826035
+  - 1.5309840822906493
+  - -0.8080684352496338
+  - 0.011230183995485307
+  - 0.7036569100280762
+  - -0.007213291291418076
+  - 1.6567915471643067
+  - 1.480564814971924
+  head_pan_joint: -0.009095907211303711
+  head_tilt_joint: 0.8694718874755859
+macaroni:
+  pose:
+    orientation:
+      w: 0.7282503938361684
+      x: 0.013076934042803868
+      y: -0.011080227491189212
+      z: -0.6850967714361601
+    position:
+      x: 0.5180540750592868
+      y: 0.13984577993412925
+      z: 0.7654366423675452
+  vicon_model_path: /home/robot/catkin_ws/src/dataset/objects/MacaroniAndCheese.yaml
+table1:
+  pose:
+    orientation:
+      w: -0.01920499126655819
+      x: 0.006398923551519335
+      y: -0.00013989524901893876
+      z: 0.9997950802625268
+    position:
+      x: 0.6702204842895163
+      y: -0.05199547866466396
+      z: 0.6422338434940956
+  vicon_model_path: /home/robot/catkin_ws/src/dataset/objects/table.yaml

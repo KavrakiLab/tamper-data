@@ -1,0 +1,19 @@
+name            : "gelatin"
+frame           : "vicon/gelatin/gelatin"
+geometry        :
+  type          : "box"
+  dimensions    : [0.08918299674987793, 0.07311500072479248, 0.029983000755310059]
+  offset        :
+    position    : [0, 0, 0]
+    orientation : [0, 0, 0, 1]
+grasp_force     : 35
+side_grasp_offset : [0.012, 0.017, -1] # Value is -1 if not possible along this axis
+# geometry        :
+#   type          : "mesh"
+#   mesh_name     : "gelatin"
+#   resource      : "package://onto/resources/simulation/gazebo/models/003_cracker_box/google_16k/textured.dae"
+#   dimensions    : [1, 1, 1] # Scale
+#   optional_dim  : [0.06, 0.06, 0.05] # WIDTH of the triangle, HEIGHT, thickness
+#   offset        :
+#     position    : [0, 0, 0]
+#     orientation : [0.0, 0.0, 0.0, 1.0]

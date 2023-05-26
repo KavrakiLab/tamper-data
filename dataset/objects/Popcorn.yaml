@@ -1,0 +1,9 @@
+name            : "Popcorn"
+frame           : "vicon/Popcorn/Popcorn"
+geometry        :
+  type          : "box"
+  dimensions    : [0.084976997375488281, 0.03825200080871582, 0.12649200439453125]
+  offset        :
+    position    : [0, 0, 0]
+    orientation : [0, 0, 0, 1]
+grasp_offset    : -0.01

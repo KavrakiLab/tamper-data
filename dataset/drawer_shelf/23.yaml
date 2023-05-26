@@ -1,0 +1,73 @@
+gelatin:
+  pose:
+    orientation:
+      w: -0.3505789994501157
+      x: 0.5875859837178692
+      y: 0.3131803414785745
+      z: 0.6586009038820273
+    position:
+      x: 0.7035073756942438
+      y: 0.03590357271345419
+      z: 0.7505463211275343
+  vicon_model_path: package://onto/resources/simulation/vicon_object_server/objects/gelatin.yaml
+joints:
+  arm_with_torso:
+  - 0.11161115765571594
+  - 1.5313674593658446
+  - -0.8080684352496338
+  - 0.011230183995485307
+  - 0.7021229248901367
+  - -0.006829795938255787
+  - 1.6567915471643067
+  - 1.480564814971924
+  head_pan_joint: -0.19042319059371948
+  head_tilt_joint: 0.7091711558166504
+kl_drawer:
+  pose:
+    orientation:
+      w: 0.9989998721677222
+      x: -0.02813146764105085
+      y: 0.01155580318714325
+      z: 0.032777116254106724
+    position:
+      x: 0.94804214507318
+      y: 0.49998913574862236
+      z: 0.2904182080041525
+  vicon_model_path: package://onto/resources/simulation/vicon_object_server/objects/kl_drawer_closed.yaml
+macaroni:
+  pose:
+    orientation:
+      w: 0.7409718666415412
+      x: 0.02766458738567019
+      y: -0.02185095807529509
+      z: -0.6706100946762753
+    position:
+      x: 0.5689452944672189
+      y: 0.03829001735211934
+      z: 0.7661451680165583
+  vicon_model_path: package://onto/resources/simulation/vicon_object_server/objects/MacaroniAndCheese.yaml
+popcorn:
+  pose:
+    orientation:
+      w: -0.35832223282048986
+      x: 0.6204936666270424
+      y: -0.32942044801739573
+      z: -0.6148780005580667
+    position:
+      x: 0.5871445810145759
+      y: 0.4869208986214202
+      z: 0.4540732417416026
+  vicon_model_path: package://onto/resources/simulation/vicon_object_server/objects/Popcorn.yaml
+problem_file: package://onto/resources/real_robot/sense_tamp/benchmarks/drawer_shelf/3_spec.yaml
+table1:
+  pose:
+    orientation:
+      w: -0.0326297600156427
+      x: 0.006976335135975993
+      y: -0.0016926068206942087
+      z: 0.9994417264610992
+    position:
+      x: 0.8428245322459533
+      y: -0.39714275318835324
+      z: 0.633005809788082
+  vicon_model_path: package://kl_robot_hardware_fetch/parameters/vicon_object_server/objects/table_shelf_kavrakilab.yaml

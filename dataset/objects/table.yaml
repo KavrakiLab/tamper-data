@@ -1,0 +1,8 @@
+name            : "table1"
+frame           : "vicon/Table/Table"
+geometry        :
+  type          : "box"
+  dimensions    : [0.75 , 1.48, 0.13]
+  offset        :
+    position    : [-0.01, -0.11, -0.07]
+    orientation : [3.66755891e-04,  -1.16502848e-03,  -8.47492266e-03,9.99963341e-01]

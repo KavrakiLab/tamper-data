@@ -1,0 +1,60 @@
+cracker:
+  pose:
+    orientation:
+      w: -0.49882693189584254
+      x: 0.5094524239943244
+      y: 0.4879650131108709
+      z: -0.5035077612921132
+    position:
+      x: 0.5049843243000736
+      y: 0.09617080910100843
+      z: 0.8153250794275898
+  vicon_model_path: package://onto/resources/simulation/vicon_object_server/objects/cracker.yaml
+gelatin:
+  pose:
+    orientation:
+      w: 0.5192221662716656
+      x: 0.47828969221628925
+      y: 0.4751641512933295
+      z: 0.5252297989428021
+    position:
+      x: 0.5891206623278646
+      y: 0.04858867803821011
+      z: 0.753360868349167
+  vicon_model_path: package://onto/resources/simulation/vicon_object_server/objects/gelatin.yaml
+joints:
+  arm_with_torso:
+  - 0.11092451214790344
+  - 1.5313674593658446
+  - -0.8088354278186035
+  - 0.012764165408134461
+  - 0.7032732945343018
+  - -0.006446300585093498
+  - 1.6567915471643067
+  - 1.480564814971924
+  head_pan_joint: 0.004350423812866211
+  head_tilt_joint: 0.8782924212280273
+macaroni:
+  pose:
+    orientation:
+      w: 0.312814504988633
+      x: -0.0022987435799448836
+      y: 0.014034744977379754
+      z: 0.9497077588290462
+    position:
+      x: 0.6118413612466456
+      y: 0.15537222880061816
+      z: 0.7721890683704414
+  vicon_model_path: package://onto/resources/simulation/vicon_object_server/objects/MacaroniAndCheese.yaml
+table1:
+  pose:
+    orientation:
+      w: -0.01612531955136105
+      x: 0.003976101581768431
+      y: -0.0020320917850792015
+      z: 0.9998600078453759
+    position:
+      x: 0.6751938970204888
+      y: -0.05652812530711221
+      z: 0.6417887790230551
+  vicon_model_path: package://kl_robot_hardware_fetch/parameters/vicon_object_server/objects/table_kavrakilab.yaml
